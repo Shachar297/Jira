@@ -1,0 +1,3 @@
+[submodule "Jira-Scripts"]
+	path = Jira-Scripts
+	url = https://github.com/Shachar297/Jira-Scripts.git
