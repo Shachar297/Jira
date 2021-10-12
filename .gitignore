@@ -4,3 +4,5 @@ authenticators/
 *.json
 *.txt
 logs/
+node_modules/
+.history
