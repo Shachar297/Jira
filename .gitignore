@@ -1,0 +1,6 @@
+# Ignoring all auth files and sensitive / private files.
+
+authenticators/
+*.json
+*.txt
+logs/
