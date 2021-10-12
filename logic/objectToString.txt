@@ -1,0 +1,1 @@
+Putting every parameter under a function called convertObjectToString(param) for jira to digest better while second an http request
