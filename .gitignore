@@ -2,3 +2,4 @@
 
 authentications/
 *.json
+node_modules/
