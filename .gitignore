@@ -1,0 +1,4 @@
+# Ignore auth files or any other files that contains harmful details or content.
+
+authentications/
+*.json
