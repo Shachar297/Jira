@@ -4,7 +4,7 @@ let filterId = 0;
 
 async function getDashboard() {
   let dashboard;
-  fetch('https://jiracourseshachar.atlassian.net/rest/api/3/dashboard/10001/items/10004/properties/config', {
+  fetch('cloudAuth.baseUrl/dashboard/10001/items/10004/properties/config', {
     method: 'GET',
     headers: {
       'Authorization': `Basic ${Buffer.from(
@@ -29,7 +29,7 @@ async function editDashboard(dashboardId, itemId, property, parameters) {
 
 
 
-  fetch(`https://jiracourseshachar.atlassian.net/rest/api/3/dashboard/${dashboardId}/items/${itemId}/properties/${property}`, {
+  fetch(`cloudAuth.baseUrl/dashboard/${dashboardId}/items/${itemId}/properties/${property}`, {
 
     method: 'PUT',
     headers: {
