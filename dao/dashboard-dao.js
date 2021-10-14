@@ -33,8 +33,9 @@ async function editDashboard(dashboardId, itemId, property, parameters) {
 
     method: 'PUT',
     headers: {
-      'Authorization': `Basic ${Buffer.from(
-        'thisishachar@gmail.com:VdDEVdhmmHrtS9kJSzg42B36'
+     'Authorization': `Basic ${Buffer.from(
+        cloudAuth.cloud.username + ":" + cloudAuth.cloud.token
+
 
       ).toString('base64')}`,
       'Accept': 'application/json',
