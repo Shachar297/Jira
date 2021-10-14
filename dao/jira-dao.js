@@ -13,13 +13,7 @@ async function createJiraIssue(jiraIssue) {
 }
 
 async function createIssue(issueParameters) {
-    const options = {
-        config: {
-            "host": "localhost:8080",
-            "username": "thisisovadia",
-            "password": "5366987S",
-            "datatype": "json"
-        },
+    
         data: {
             "fields": {
                 "project": {
@@ -54,7 +48,7 @@ function issueCreator(issueParameters) {
             "host": config.host + ":" + config.port,
             "username": config.username,
             "password": config.password,
-            "Authorization": "Basic NjEwNzYyNTY2MjYyOpd0Z0SOAp6ZM95cSM3ljOOmTLlS",
+            "Authorization": "Basic config.token",
             "datatype": "json"
         },
         data: {
@@ -85,7 +79,7 @@ async function createIssueType(issueTypeParameters) {
         method: "POST",
         headers: {
             'Authorization': `Basic ${Buffer.from(
-                'thisishachar@gmail.com:VdDEVdhmmHrtS9kJSzg42B36'
+                'Config.username:config.token'
             ).toString('base64')}`,
             'Accept': 'application/json',
             'Content-Type': 'application/json'
